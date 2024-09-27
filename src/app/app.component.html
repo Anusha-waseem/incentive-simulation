@@ -1,0 +1,52 @@
+<div class="container">
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Pricing Presentation Board</h1>
+  </header>
+  
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <!-- Price Section -->
+    <div class="price-section">
+      <h2>Offer Volume List Price: 214,993</h2>
+      <p>Top Discount: 22%</p>
+      <p>Target Discount: 25.7%</p>
+      <p>Floor Discount: 29.4%</p>
+      <p>Your Simulation:</p>
+      <input 
+      type="range" 
+      [(ngModel)]="discount" 
+      min="0" 
+      max="200" 
+      step="1" 
+      (input)="updateGraphs()"
+      class="discount-slider"
+      >
+      <p>Discount Simulated: {{ calculateDiscountSimulation()  }}%</p>
+    </div>
+
+    <!-- Graph Section -->
+    <div class="graph-section">
+      <h2>Incentive for this Deal</h2>
+      <div class="graph-placeholder">
+        <!-- Graph Placeholder -->
+        <p>Incentive: {{incentive}} </p>
+      </div>
+    </div>
+
+    <!-- Realistic Discount Section -->
+    <div class="realistic-discount-section">
+      <h2>Realistic Discount Scenario</h2>
+      <div class="graph-placeholder">
+        <!-- Graph Placeholder -->
+        <p>Realistic Discount: {{ realisticDiscount}}%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amazon Section -->
+  <section class="amazon-section">
+    <h2>Additional Cents on Your Amazon Coupon</h2>
+    <p>Plus 1,462 influence on your current total account in USD (865 → 879)</p>
+  </section>
+</div>

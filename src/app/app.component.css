@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .price-section, .graph-section, .realistic-discount-section {
+    border: 2px dashed red;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .graph-section, .realistic-discount-section {
+    margin-left: 20px;
+  }
+  
+  .amazon-section {
+    margin-top: 20px;
+    border: 2px dashed blue;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
